@@ -54,6 +54,7 @@ public class ClientTest {
                 //将request包改为response包
                 request.markResponseType();
                 System.out.println(request);
+                ctx.writeAndFlush(request);
                 return request;
             }
 
